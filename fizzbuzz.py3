@@ -17,13 +17,8 @@ should print out one line per set. Ensure that there are no trailing empty space
 This description is from the CodeEval website.
 
 '''
-
-
-
 if __name__ == '__main__':
     pass
- 
-input_lines = []
 
 def FizzBuzz(f,b,n):
 	if n % f == 0 and n % b == 0:
