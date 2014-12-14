@@ -32,8 +32,6 @@ def FizzBuzz(f,b,n):
 with open("fizzbuzz.txt","r") as readfile:
 	for line in readfile.readlines():
 		line.strip("\n")
-		input_lines.append(line.split())
+		line = [int(i) for i in line]
+		print(" ".join([FizzBuzz(line[0],line[1],n) for n in range(1,line[2]+1)]))
 
-for eachList in input_lines:
-	eachList = [int(i) for i in eachList]
-	print(" ".join([FizzBuzz(eachList[0],eachList[1],n) for n in range(1,eachList[2]+1)]))
